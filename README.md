@@ -40,22 +40,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](BoltBucket.gif)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  GIF tool here
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ...  EzGif
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+Getting the price to dynamically change based on the price of individual parts was a challenge.
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2025] [Om Patki]
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
