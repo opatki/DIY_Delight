@@ -29,11 +29,8 @@ const App = () => {
 
   return (
     <div className='app'>
-
       <Navigation />
-
       { element }
-
     </div>
   )
 }

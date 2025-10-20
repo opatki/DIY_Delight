@@ -10,3 +10,98 @@
     overflow-x: hidden;
     padding-bottom: 50px;
 }
+
+.create-car-container {
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  position: relative; /* Added so dropdown positions relative to this */
+}
+
+.dropdown-menu {
+   position: fixed; /* Fixed to viewport, not to button */
+  top: 350px; /* adjust this value to match where the exterior dropdown appears */
+  left: 50%; /* centers horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #222;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 10px;
+  z-index: 5;
+  width: fit-content;
+  transform: translateX(-50%);
+}
+
+.car-option-btn {
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+
+.option-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  border: solid rgb(115, 2, 12) 1px;
+}
+
+.option-image {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.option-image-container:hover .option-image {
+  filter: brightness(60%);
+}
+
+.hover-info {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.option-image-container:hover .hover-info {
+  opacity: 1;
+}
+
+.selection-summary {
+  margin-top: 1.5rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.price-display {
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}

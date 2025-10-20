@@ -1,0 +1,25 @@
+.car-card {
+    margin: 2em 3em;
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1em;
+    margin-left: 8em;
+    margin-right: 0;
+}
+
+.grid-container p { 
+    text-align: left;
+}
+
+.details {
+    color: white;
+}
