@@ -4,11 +4,11 @@ import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
 // import the router from your routes file
-
+import carsRoutes from "./routes/carsRoutes.js";
 
 dotenv.config()
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 const app = express()
 
@@ -23,7 +23,11 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
+app.use("/api/cars", carsRoutes);
 
+app.get("/", (req, res) => {
+  res.send("🚗 Custom Cars API is running!");
+});
 
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>
